@@ -1,15 +1,15 @@
-image: dperson/openvpn-client:latest
+image: dgspai/openvpn-client:latest
 manifests:
-  - image: dperson/openvpn-client:amd64
+  - image: dgspai/openvpn-client:amd64
     platform:
       architecture: amd64
       os: linux
-  - image: dperson/openvpn-client:aarch64
+  - image: dgspai/openvpn-client:aarch64
     platform:
       architecture: arm64
       os: linux
       variant: v8
-  - image: dperson/openvpn-client:armhf
+  - image: dgspai/openvpn-client:armhf
     platform:
       architecture: arm
       os: linux

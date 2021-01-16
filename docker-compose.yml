@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   vpn:
-    image: dperson/openvpn-client
+    image: dgspai/openvpn-client
     # cap_add, security_opt, and volume required for the image to function
     cap_add:
       - net_admin
@@ -42,7 +42,7 @@ services:
       - /srv/service1:/var/lib/service1:Z
 
   web:
-    image: dperson/nginx
+    image: dgspai/nginx
     depends_on:
       - service1
     environment:
